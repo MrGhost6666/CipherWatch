@@ -77,9 +77,13 @@ chmod +x ~/.conky/CipherWatch/real_ip.sh
 I'm using a **wireless network**, so I've set the default detection gateway to `wlo1`.
 If you're using **Ethernet**, your gateway might be `eth0`. You can check your network and VPN gateways by running `ip a` or `ip link show` in a terminal.
 
-If you are not using the wlo1 gateway, you need to modify the `CipherWatch` file.
+If you are not using the wlo1 gateway, you need to modify the `CipherWatch` and `real_ip.sh` file.
 
 There are six `wlo1` to modify. In rows 96, 98, 99, and 104, modify the `wlo1` to your network gateway.
+
+And `real_ip.sh`  **DEFAULT_INTERFACE="wlo1"**
+                                     ^^^^ Change your network gateway
+
 
 ## About VPN GATEWAY
 The default VPN is `ProtonVPN`, so the detected VPN gateway is `proton0`. If you are not using ProtonVPN but a different VPN service, you will need to modify the `vpn_status.sh` and `connection_status.sh` file.
