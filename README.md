@@ -53,13 +53,33 @@ Then type the following into the same terminal or just copy and paste (root powe
 ```bash  
  git clone https://github.com/MrGhost6666/CipherWatch 
  ```
-You need to move CipherWatch to the .conky directory.
+You need to move CipherWatch to the .conky directory. **You need to change `yourusername` in the path to your username.**
 ```bash  
  mv CipherWatch /home/yourusername/.conky/
  ```
+ 
+You need to give permissions to `connection_status.sh`, `tor_stauts.sh`, `vpn_stauts.sh` and `real_ip.sh` to run properly.
+```bash  
+chmod +x ~/.conky/CipherWatch/connection_status.sh
+ ```
+```bash  
+chmod +x ~/.conky/CipherWatch/tor_status.sh
+ ```
+```bash  
+chmod +x ~/.conky/CipherWatch/vpn_status.sh
+ ```
+```bash  
+chmod +x ~/.conky/CipherWatch/real_ip.sh
+ ```
 ## About NETWORK
+I'm using a **wireless network**, so I've set the default detection gateway to `wlo1`.
+
+If you're using **Ethernet**, your gateway might be `eth0`. You can check your network and VPN gateways by running `ip a` or `ip link show` in a terminal.
 
 ## About VPN GATEWAY
-The default VPN is `ProtonVPN`, so the detected VPN gateway is `proton0`. If you are not using ProtonVPN but a different VPN service, you will need to modify the `vpn_status.sh` file.
+The default VPN is `ProtonVPN`, so the detected VPN gateway is `proton0`. If you are not using ProtonVPN but a different VPN service, you will need to modify the `vpn_status.sh` and `connection_status.sh` file.
 
-
+```bash  
+VPN_INTERFACE="proton0"
+               ^^^^^^^ Change your VPN GATEWAY
+ ```
