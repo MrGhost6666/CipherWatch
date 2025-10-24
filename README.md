@@ -55,7 +55,7 @@ Then type the following into the same terminal or just copy and paste (root powe
 ```bash  
  git clone https://github.com/MrGhost6666/CipherWatch 
  ```
-You need to move CipherWatch to the .conky directory. **You need to change `yourusername` in the path to your username.**
+You need to move `CipherWatch` to the `.conky` directory. **You need to change `yourusername` in the path to your username.**
 ```bash  
  mv CipherWatch /home/yourusername/.conky/
  ```
