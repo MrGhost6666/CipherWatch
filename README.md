@@ -1,8 +1,10 @@
 # CipherWatch: The Vigilant Desktop Monitor
 ![Screenshot](https://github.com/MrGhost6666/CipherWatch/blob/main/CipherWatch.png) ![Screenshot2](https://github.com/MrGhost6666/CipherWatch/blob/main/CipherWatch-2.png) ![Screenshot3](https://github.com/MrGhost6666/CipherWatch/blob/main/CipherWatch-3.png)
 
-These are the configuration files I wrote for the Linux system monitoring program "Conky."
+These are the config files I wrote for the Linux system monitoring program "Conky."
 They include System, CPU, RAM, Disk, VPN, Tor, and notebook battery information.
+
+This conky config is modified based on TeejeeTech.
 
 ## DESCRIPTION:
 This is a highly customized configuration designed for users who prioritize system transparency and network security. It goes beyond standard monitoring by integrating real-time checks for privacy tools.
@@ -27,7 +29,7 @@ This is a highly customized configuration designed for users who prioritize syst
 **CipherWatch** provides a complete, fast, and security-aware view of your Linux system, ensuring you always know the status of your connection and the performance of your hardware.
 This is a highly customized configuration designed for users who prioritize system transparency and network security. It goes beyond standard monitoring by integrating real-time checks for privacy tools.
 
-## INSTALL Git and Conky
+## INSTALL GIT and CONKY
 
 To download and use or modify on your Linux box, you will need to install git if it is not already provided by your distribution.
 
@@ -73,8 +75,11 @@ chmod +x ~/.conky/CipherWatch/real_ip.sh
  ```
 ## About NETWORK
 I'm using a **wireless network**, so I've set the default detection gateway to `wlo1`.
-
 If you're using **Ethernet**, your gateway might be `eth0`. You can check your network and VPN gateways by running `ip a` or `ip link show` in a terminal.
+
+If you are not using the wlo1 gateway, you need to modify the `CipherWatch` file.
+
+There are six `wlo1` to modify. In rows 96, 98, 99, and 104, modify the `wlo1` to your network gateway.
 
 ## About VPN GATEWAY
 The default VPN is `ProtonVPN`, so the detected VPN gateway is `proton0`. If you are not using ProtonVPN but a different VPN service, you will need to modify the `vpn_status.sh` and `connection_status.sh` file.
