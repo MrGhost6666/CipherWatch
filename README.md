@@ -6,7 +6,7 @@ They include System, CPU, RAM, Disk, VPN, Tor, and notebook battery information.
 
 This conky config is modified based on TeejeeTech.
 
-## DESCRIPTION:
+## DESCRIPTION
 This is a highly customized configuration designed for users who prioritize system transparency and network security. It goes beyond standard monitoring by integrating real-time checks for privacy tools.
 
 **Key Features Include:**
@@ -29,7 +29,7 @@ This is a highly customized configuration designed for users who prioritize syst
 **CipherWatch** provides a complete, fast, and security-aware view of your Linux system, ensuring you always know the status of your connection and the performance of your hardware.
 This is a highly customized configuration designed for users who prioritize system transparency and network security. It goes beyond standard monitoring by integrating real-time checks for privacy tools.
 
-## INSTALL GIT and CONKY
+## INSTALL GIT & CONKY
 
 To download and use or modify on your Linux box, you will need to install git if it is not already provided by your distribution.
 
@@ -50,7 +50,7 @@ Debian/Ubuntu/Mint and variants:
 ```bash
 sudo apt install conky-manager2
 ```
-## DOWNLOAD AND USE
+## DOWNLOAD & USE
 Then type the following into the same terminal or just copy and paste (root powers not needed):
 ```bash  
  git clone https://github.com/MrGhost6666/CipherWatch 
@@ -63,17 +63,11 @@ You need to move `CipherWatch` to the `.conky` directory. **You need to change `
 You need to give permissions to `connection_status.sh`, `tor_stauts.sh`, `vpn_stauts.sh` and `real_ip.sh` to run properly.
 ```bash  
 chmod +x ~/.conky/CipherWatch/connection_status.sh
- ```
-```bash  
-chmod +x ~/.conky/CipherWatch/tor_status.sh
- ```
-```bash  
+chmod +x ~/.conky/CipherWatch/tor_status.sh 
 chmod +x ~/.conky/CipherWatch/vpn_status.sh
- ```
-```bash  
 chmod +x ~/.conky/CipherWatch/real_ip.sh
  ```
-## About NETWORK
+### About NETWORK
 I'm using a **wireless network**, so I've set the default detection gateway to `wlo1`.
 If you're using **Ethernet**, your gateway might be `eth0`. You can check your network and VPN gateways by running `ip a` or `ip link show` in a terminal.
 
@@ -84,7 +78,7 @@ There are six `wlo1` to modify. In rows 96, 98, 99, and 104, modify the `wlo1` t
 And `real_ip.sh` **DEFAULT_INTERFACE="wlo1"**
 
 
-## About VPN GATEWAY
+### About VPN GATEWAY
 The default VPN is `ProtonVPN`, so the detected VPN gateway is `proton0`. If you are not using ProtonVPN but a different VPN service, you will need to modify the `vpn_status.sh` and `connection_status.sh` file.
 
 ```bash  
