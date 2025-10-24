@@ -81,8 +81,7 @@ If you are not using the wlo1 gateway, you need to modify the `CipherWatch` and 
 
 There are six `wlo1` to modify. In rows 96, 98, 99, and 104, modify the `wlo1` to your network gateway.
 
-And `real_ip.sh`  **DEFAULT_INTERFACE="wlo1"**
-                                     ^^^^ Change your network gateway
+And `real_ip.sh` **DEFAULT_INTERFACE="wlo1"**
 
 
 ## About VPN GATEWAY
