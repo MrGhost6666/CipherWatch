@@ -1,5 +1,5 @@
 # CipherWatch: The Vigilant Desktop Monitor
-![Screenshot](https://github.com/MrGhost6666/CipherWatch/blob/main/CipherWatch.png) ![Screenshot2](https://github.com/MrGhost6666/CipherWatch/blob/main/CipherWatch-2.png) ![Screenshot3](https://github.com/MrGhost6666/CipherWatch/blob/main/CipherWatch-3.png)
+![Screenshot](https://github.com/MrGhost6666/CipherWatch/blob/main/pic/CipherWatch.png) ![Screenshot2](https://github.com/MrGhost6666/CipherWatch/blob/main/pic/CipherWatch-2.png) ![Screenshot3](https://github.com/MrGhost6666/CipherWatch/blob/main/pic/CipherWatch-3.png)
 
 These are the config files I wrote for the Linux system monitoring program "Conky."
 They include System, CPU, RAM, Disk, VPN, Tor, and notebook battery information.
