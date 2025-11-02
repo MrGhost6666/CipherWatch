@@ -1,11 +1,4 @@
 conky.config = {
--- **********************************************************************
--- "CPU Panel (8-core)" theme for Conky by Tony George (teejee2008@gmail.com)
-
--- Webpage: http://teejeetech.blogspot.in/
--- **********************************************************************
-
-
 	background = true,
 	double_buffer = true,
 
